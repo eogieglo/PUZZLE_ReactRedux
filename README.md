@@ -1,3 +1,5 @@
+##System OS Ubuntu Desktop 18.04 used for development (By Eric Ogieglo)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
