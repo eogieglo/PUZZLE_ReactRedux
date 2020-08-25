@@ -7,7 +7,7 @@ let LOGIN = "LOGIN"
 
 
 //reducer
-export default function reducer(state, action){
+export default function reducer(state = initialData, action){
     switch(action.type){
         case LOGIN:
         default:
