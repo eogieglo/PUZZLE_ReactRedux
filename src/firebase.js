@@ -1,25 +1,23 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
- // Web app's Firebase configuration
 
- let firebaseConfig = {
-    apiKey: "AIzaSyCD1dUYOtaN9CcMYRm-lS23YK0VW1dEYJA",
-    authDomain: "puzzle-reactredux.firebaseapp.com",
-    databaseURL: "https://puzzle-reactredux.firebaseio.com",
-    projectId: "puzzle-reactredux",
-    storageBucket: "puzzle-reactredux.appspot.com",
-    messagingSenderId: "890062175533",
-    appId: "1:890062175533:web:df4426871ede30042467a4",
-    measurementId: "G-26ZWHLGJJL"
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAgP79vrVrS5qkS1eVDcWyLZqMO0tyF-bI",
+    authDomain: "puzzle-reactredux-c9d26.firebaseapp.com",
+    databaseURL: "https://puzzle-reactredux-c9d26.firebaseio.com",
+    projectId: "puzzle-reactredux-c9d26",
+    storageBucket: "puzzle-reactredux-c9d26.appspot.com",
+    messagingSenderId: "889282244237",
+    appId: "1:889282244237:web:d7a8a002608690a8303cc4"
   };
-
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  
 
   export function loginWithGoogle(){
       let provider =  new firebase.auth.GoogleAuthProvider() 
-      firebase.auth().signInWithPopup(provider)
+      return firebase.auth().signInWithPopup(provider)
       .then(snap => snap.user)
   }
